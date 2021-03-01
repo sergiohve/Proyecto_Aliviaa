@@ -1,4 +1,4 @@
-<h1 align="center">Ecommerce made with Next.js</h1>
+<h1 align="center">Ecommerce mde with Next.js</h1>
 
 <p align="center">	
    <a href="https://www.linkedin.com/in/rafael-goulartb/">

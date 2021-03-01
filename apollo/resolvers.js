@@ -117,7 +117,7 @@ export const resolvers = {
         const product = await UpdateProduct(args.id, args.input);
         return { product };
       } catch (error) {
-        throw new Error('it is not possible update the product');
+        throw new Error('it is not possible update the prodct');
       }
     },
   },
