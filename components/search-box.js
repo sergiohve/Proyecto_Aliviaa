@@ -3,7 +3,9 @@ import { FaSearch } from 'react-icons/fa';
 export default function SearchBox() {
   return (
     <>
+     
       <div className="search-box">
+       
         <button className="search-button">
           <FaSearch color="#D8D8D8" size="15px" />
         </button>
@@ -11,21 +13,10 @@ export default function SearchBox() {
           id="search"
           type="text"
           name="search"
-          placeholder="Search goods"
+          placeholder="Encuentra automóviles, telefonos, laptops y más"
+       
         />
-        <select id="categories-search" name="categories-search">
-          <option value="" selected>
-            Category
-          </option>
-          <option value="#">Desktop</option>
-            <option value="#">Smartphone</option>
-            <option value="#">Watches</option>
-            <option value="#">Games</option>
-            <option value="#">Laptop</option>
-            <option value="#">Keyboards</option>
-            <option value="#">TV & Video</option>
-            <option value="#">Accessories</option>
-        </select>
+       
       </div>
       <style jsx>{`
         .search-box {
@@ -54,7 +45,7 @@ export default function SearchBox() {
           opacity: 40%;
         }
         .search-box input {
-          width: 75%;
+          width: 300px;
           height: 100%;
           border: none;
           padding-left: 8px;
@@ -72,7 +63,7 @@ export default function SearchBox() {
           font-size: 10px;
           letter-spacing: 1px;
           color: #b2b2b2;
-          border: none;
+         
           background: none;
         }
         .search-box select:focus {

@@ -42,7 +42,7 @@ export default function Login() {
         </form>
 
         <Link href="/user/signup">
-          <a className="switchForm">I do not have a account</a>
+          <a className="switchForm">No tengo cuenta</a>
         </Link>
       </FormContainer>
 

@@ -28,7 +28,7 @@ export default function HeaderBarProducts() {
           }
           onClick={handlePopularProductsClick}
         >
-          Popular products
+          Productos preferidos
         </a>
         <a
           id="low-price"
@@ -40,7 +40,7 @@ export default function HeaderBarProducts() {
           }
           onClick={handleLowPriceProductsClick}
         >
-          Low price
+          Precio bajo
         </a>
         <a
           id="high-price"
@@ -52,7 +52,7 @@ export default function HeaderBarProducts() {
           }
           onClick={handleHighPriceProductsClick}
         >
-          High price
+          Precio Alto
         </a>
       </div>
       <style jsx>{`

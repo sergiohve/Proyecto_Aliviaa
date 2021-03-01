@@ -26,7 +26,7 @@ export default function SignUp() {
     e.preventDefault();
 
     if (password != confirm_password) {
-      setMsgError('The passwords do not match');
+      setMsgError('Las contraseñas no coinciden');
       setPassword('');
       setConfirm_password('');
       return;
@@ -48,48 +48,48 @@ export default function SignUp() {
   }
 
   return (
-    <PageContainer title="Quantum E-commerce - Sign Up">
+    <PageContainer title="ALIVIAA">
       <FormContainer>
         <form onSubmit={handleSubmit}>
-          <h3 className="formTitle">sign up</h3>
+          <h3 className="formTitle">Registrarse</h3>
 
           {msgError && <AlertError message={msgError} />}
           <InputContainer>
             <Input
               type="text"
               name="name"
-              placeholder="Name"
+              placeholder="Nombre"
               onChange={(value) => setName(value)}
               value={name}
             />
             <Input
               type="email"
               name="email"
-              placeholder="Email"
+              placeholder="Correo"
               onChange={(value) => setEmail(value)}
               value={email}
             />
             <Input
               type="password"
               name="password"
-              placeholder="Password"
+              placeholder="Contraseña"
               onChange={(value) => setPassword(value)}
               value={password}
             />
             <Input
               type="password"
               name="confirm_password"
-              placeholder="Repeat Password"
+              placeholder="Repetir contraseña"
               onChange={(value) => setConfirm_password(value)}
               value={confirm_password}
             />
 
-            <Button type="submit" title="Sign Up" />
+            <Button type="submit" title="Registrarse" />
           </InputContainer>
         </form>
 
         <Link href="/user/login">
-          <a className="switchForm">I already have a account</a>
+          <a className="switchForm">Ya tengo una cuenta</a>
         </Link>
       </FormContainer>
 

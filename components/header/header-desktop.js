@@ -13,7 +13,7 @@ import Logo from '../logo';
 import SearchBox from '../search-box';
 
 export default function HeaderDesktop({ viewer }) {
-  const cart = useQuery(CART_COUNT);
+
 
   return (
     <>
@@ -23,29 +23,21 @@ export default function HeaderDesktop({ viewer }) {
         <SearchBox />
 
         <div className="nav-buttons">
-          <Link href="/cart">
-            <a className="nav-buttons-items">
-              <FaShoppingCart color="#808080" />
-              <p>
-                <sup className="items-total">{cart.data.cart.cartCount}</sup>{' '}
-                Items
-              </p>
-            </a>
-          </Link>
-          <Link href="/wishlist">
-            <a className="nav-buttons-wishlist">
-              <FaRegHeart color="#808080" />
-              <p>Wishlist</p>
-            </a>
-          </Link>
+         
           {!viewer && (
             <Link href="/user/login">
               <a className="nav-buttons-signin">
                 <FaUser color="#808080" />
-                <p>Sign In</p>
+                <p>Ingresar</p>
               </a>
             </Link>
           )}
+          <Link href="/wishlist">
+            <a className="nav-buttons-wishlist">
+              <FaRegHeart color="#808080" />
+              <p>Favoritos</p>
+            </a>
+          </Link>
           {viewer && (
             <>
               <Link href="/profile">
@@ -66,47 +58,37 @@ export default function HeaderDesktop({ viewer }) {
       <div className="header header-bottom">
         <div className="all-categories-box">
           <FaBars color="#d8d8d8" />
-          <select name="categories" id="categories">
-            <option value="All Categories" selected>
-              All Categories
+          <select name="categorias" id="categorias">
+            <option value="Categorias" selected>
+             Todas las categorias
             </option>
-            <option value="#">Desktop</option>
-            <option value="#">Smartphone</option>
-            <option value="#">Watches</option>
-            <option value="#">Games</option>
-            <option value="#">Laptop</option>
-            <option value="#">Keyboards</option>
+            <option value="#">Escritorio</option>
+            <option value="#">Teléfonos</option>
+            <option value="#">Relojes</option>
+            <option value="#">Juegos</option>
+            <option value="#">Laptops</option>
+           
             <option value="#">TV & Video</option>
-            <option value="#">Accessories</option>
+            <option value="#">Accessorios</option>
           </select>
         </div>
 
         <nav className="main-nav">
           <Link href="#">
-            <a>Super Deals</a>
+            <a>Carros</a>
           </Link>
           <Link href="#">
-            <a>Featured Brands</a>
+            <a>Motos</a>
           </Link>
           <Link href="#">
-            <a>Collections</a>
+            <a>Apartamentos-Casas-VENTAS</a>
           </Link>
           <Link href="#">
-            <a>Bestselling</a>
+            <a>Apartamentos-Casas-VENTAS</a>
           </Link>
         </nav>
 
-        <div className="settings">
-          <div className="menu-dropdown">
-            <p>Help</p>
-          </div>
-          <div className="menu-dropdown">
-            <p>USD</p>
-          </div>
-          <div className="menu-dropdown">
-            <p>Language</p>
-          </div>
-        </div>
+       
       </div>
       <style jsx>{`
         /* Header Top */
@@ -115,7 +97,8 @@ export default function HeaderDesktop({ viewer }) {
           flex-direction: row;
           justify-content: space-between;
           align-items: center;
-          padding: 28px 10vw;
+          padding: 10px 10vw;
+         
         }
         .nav-buttons {
           display: flex;

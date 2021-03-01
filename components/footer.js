@@ -18,14 +18,9 @@ export default function Fotter() {
         <Logo />
 
         <div className="footer-nav">
+         
           <Link href="/">
-            <a>Shop</a>
-          </Link>
-          <Link href="/">
-            <a>Journal</a>
-          </Link>
-          <Link href="/">
-            <a>About</a>
+            <a>Sobre nosotros</a>
           </Link>
           <Link href="/">
             <a>Contacts</a>
@@ -57,27 +52,10 @@ export default function Fotter() {
       </div>
       <div className="footer footer-bottom">
         <div className="texts">
-          <p>© 2016. Quantum UI kit</p>
-          <p>Privacy Policy</p>
-          <p>Terms of Use</p>
+         
+        ><p>Realizado por Sergio Herrera</p>
         </div>
-        <div className="payment-info">
-          <p className="text">Accepted payment methods</p>
-          <div className="payment-methods">
-            <div>
-              <FaCcVisa color="#424242" size="32px" />
-            </div>
-            <div>
-              <FaCcMastercard color="#424242" size="32px" />
-            </div>
-            <div>
-              <FaCcPaypal color="#424242" size="32px" />
-            </div>
-            <div>
-              <FaCcAmazonPay color="#424242" size="32px" />
-            </div>
-          </div>
-        </div>
+        
       </div>
 
       <style jsx>{`
@@ -90,6 +68,9 @@ export default function Fotter() {
           box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.05);
           box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);
           overflow-x: hidden;
+        }
+        texts{
+          text-align: center;
         }
         .footer {
           display: flex;

@@ -21,17 +21,17 @@ export default function Wishlist() {
   if (error || !data?.productsById.length)
     return (
       <Page>
-        <Title title="Wishlist" />
+        <Title title="Favoritos" />
         <EmptySection name="wishlist" />
       </Page>
     );
 
   return (
     <Page>
-      <Title title="Wishlist" />
+      <Title title="Favoritos" />
       <section className="wishlist">
         <aside>
-          <AsideCategories />
+          
         </aside>
         <div className="main">
           <ProductsGrid>

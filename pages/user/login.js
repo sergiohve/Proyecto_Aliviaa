@@ -52,14 +52,14 @@ export default function Login() {
             <Input
               type="email"
               name="email"
-              placeholder="Email"
+              placeholder="Correo"
               onChange={(value) => setEmail(value)}
               value={email}
             />
             <Input
               type="password"
               name="password"
-              placeholder="Password"
+              placeholder="Contraseña"
               onChange={(value) => setPassword(value)}
               value={password}
             />
@@ -69,10 +69,10 @@ export default function Login() {
         </form>
 
         <Link href="/user/signup">
-          <a className="switchForm">I do not have a account</a>
+          <a className="switchForm">Crear una cuenta</a>
         </Link>
         <Link href="/user/resetpassword">
-          <a className="switchForm">I forgot my password</a>
+          <a className="switchForm">Se me olvido la contraseña</a>
         </Link>
       </FormContainer>
 

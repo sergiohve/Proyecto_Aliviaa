@@ -20,21 +20,17 @@ export default function SideDrawer({ closeDrawer }) {
       </div>
 
       <ul className="items">
-        <li id="home" className="item">
-          <Link href="/cart">
-            <a>Items</a>
+        <li id="contact" className="item">
+          <Link href="/user/login">
+            <a>Ingresar</a>
           </Link>
         </li>
         <li id="about" className="item">
           <Link href="/wishlist">
-            <a>Wishlist</a>
+            <a>Favoritos</a>
           </Link>
         </li>
-        <li id="contact" className="item">
-          <Link href="/user/login">
-            <a>Sign In</a>
-          </Link>
-        </li>
+       
       </ul>
 
       <style jsx>{`
