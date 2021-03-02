@@ -13,55 +13,29 @@ import InputContainer from '../../components/form/InputContainer';
 import FormContainer from '../../components/form/formContainer';
 
 export default function Login() {
-  const client = useApolloClient();
-  const [signIn] = useMutation(SIGN_IN);
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const [msgError, setMsgError] = useState('');
-
-  const router = useRouter();
-
-  async function handleSubmit(e) {
-    e.preventDefault();
-
-    try {
-      await client.resetStore();
-      const { data } = await signIn({
-        variables: {
-          email: email.trim(),
-          password: password.trim(),
-        },
-      });
-      if (data.signIn.user) {
-        await router.push('/');
-      }
-    } catch (error) {
-      setMsgError(getErrorMessage(error));
-    }
-  }
+ 
 
   return (
     <PageContainer title="Quantum E-commerce - Login">
       <FormContainer>
-        <form onSubmit={handleSubmit}>
-          <h3 className="formTitle">login</h3>
+        <form >
+          <h3 className="formTitle">Login</h3>
 
-          {msgError && <AlertError message={msgError} />}
+         
 
           <InputContainer>
             <Input
               type="email"
               name="email"
               placeholder="Correo"
-              onChange={(value) => setEmail(value)}
-              value={email}
+             
+              
             />
             <Input
               type="password"
               name="password"
               placeholder="Contraseña"
-              onChange={(value) => setPassword(value)}
-              value={password}
+            
             />
 
             <Button type="submit" title="Login" />

@@ -68,6 +68,7 @@ export default function ProductSection({ id, name, rating, img_url, price }) {
           flex-direction: column;
           box-sizing: border-box;
           height: 100%;
+          width: 100%;
           padding: 24px;
           background: white;
           box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);

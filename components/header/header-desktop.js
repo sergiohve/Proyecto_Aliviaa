@@ -32,7 +32,7 @@ export default function HeaderDesktop({ viewer }) {
               </a>
             </Link>
           )}
-          <Link href="/wishlist">
+          <Link href="/favoritos">
             <a className="nav-buttons-wishlist">
               <FaRegHeart color="#808080" />
               <p>Favoritos</p>
@@ -56,36 +56,18 @@ export default function HeaderDesktop({ viewer }) {
         </div>
       </div>
       <div className="header header-bottom">
-        <div className="all-categories-box">
-          <FaBars color="#d8d8d8" />
-          <select name="categorias" id="categorias">
-            <option value="Categorias" selected>
-             Todas las categorias
-            </option>
-            <option value="#">Escritorio</option>
-            <option value="#">Teléfonos</option>
-            <option value="#">Relojes</option>
-            <option value="#">Juegos</option>
-            <option value="#">Laptops</option>
-           
-            <option value="#">TV & Video</option>
-            <option value="#">Accessorios</option>
-          </select>
-        </div>
+      <nav className="main-nav">
+          <Link href="#">
+            <a>Productos</a>
+          </Link>
+         
+        </nav>
 
         <nav className="main-nav">
           <Link href="#">
-            <a>Carros</a>
+            <a>Servicios</a>
           </Link>
-          <Link href="#">
-            <a>Motos</a>
-          </Link>
-          <Link href="#">
-            <a>Apartamentos-Casas-VENTAS</a>
-          </Link>
-          <Link href="#">
-            <a>Apartamentos-Casas-VENTAS</a>
-          </Link>
+         
         </nav>
 
        
@@ -99,6 +81,10 @@ export default function HeaderDesktop({ viewer }) {
           align-items: center;
           padding: 10px 10vw;
          
+         
+        }
+        a{
+          padding: 20px;
         }
         .nav-buttons {
           display: flex;
@@ -191,6 +177,7 @@ export default function HeaderDesktop({ viewer }) {
           font-size: 14px;
           color: #b3b3b3;
         }
+        
       `}</style>
     </>
   );

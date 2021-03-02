@@ -1,17 +1,16 @@
-import AsideCategories from './asideCategories';
+
 import PromoCard from './promoCard';
 import HeaderBarProducts from './headerBarProducts';
 import Products from './products';
+import Carrusel from './Carrusel';
 
 export default function ProductSection({ category }) {
   return (
     <section id="product">
-      <aside>
-        <AsideCategories />
-        <PromoCard />
-      </aside>
+     
       <div className="main">
         <HeaderBarProducts />
+        <Carrusel/>
         <Products category={category} />
       </div>
 

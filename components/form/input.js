@@ -3,7 +3,7 @@ import { useState } from 'react';
 export default function Input({ type, name, placeholder, onChange, value }) {
   function handleChange(event) {
     const { value } = event.target;
-    onChange(value);
+  
   }
 
   return (

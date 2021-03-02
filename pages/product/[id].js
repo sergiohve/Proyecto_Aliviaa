@@ -27,20 +27,20 @@ export default function Home() {
 
   if ((error || !data?.productsById.length) && !loading) {
     return (
-      <Page title="Quantum E-commerce - Products">
-        <ErrorAlert message="This product is not found!"></ErrorAlert>
+      <Page title="ALIVIAA - ProductOs">
+        <ErrorAlert message="ESTE PRODUCTO NO HA SIDO ENCONTRADO!"></ErrorAlert>
       </Page>
     );
   } else if (loading) {
     return (
-      <Page title="Quantum E-commerce - Products">
+      <Page title="ALIVIAA - Productos">
         <p>Loading...</p>
       </Page>
     );
   }
 
   return (
-    <Page title="Quantum E-commerce - Products">
+    <Page title="ALIVIAA- Productos">
       <article>
         <div className="top-buttons">
           <button

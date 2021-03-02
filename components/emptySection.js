@@ -6,14 +6,14 @@ export default function EmptySection({ name }) {
       {name && (
         <Link href="/">
           <p className="empty-cart">
-            You do not have any product in your {name}
+           No tienes ningun producto en tu {name}
           </p>
         </Link>
       )}
 
       {!name && (
         <Link href="/">
-          <p className="empty-cart">This section is empty</p>
+          <p className="empty-cart">Esta seccion esta vacia</p>
         </Link>
       )}
 

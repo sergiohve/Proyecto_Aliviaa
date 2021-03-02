@@ -16,6 +16,7 @@ export default function HeaderMobile({ viewer }) {
       <SideDrawer closeDrawer={toggleDrawer} />
 
       <Logo />
+      
 
       <style jsx>{`
         .header-mobile {

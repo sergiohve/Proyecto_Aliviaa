@@ -26,7 +26,7 @@ export default function SideDrawer({ closeDrawer }) {
           </Link>
         </li>
         <li id="about" className="item">
-          <Link href="/wishlist">
+          <Link href="/favoritos">
             <a>Favoritos</a>
           </Link>
         </li>

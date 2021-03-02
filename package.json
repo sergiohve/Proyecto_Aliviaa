@@ -24,15 +24,26 @@
     "next": "^10.0.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-elastic-carousel": "^0.11.1",
     "react-icons": "^3.10.0",
+    "react-material-ui-carousel": "^2.2.1",
     "react-star-ratings": "^2.3.0",
     "reactstrap": "^8.9.0",
     "sqlite3": "^5.0.2",
+    "styled-components": "^5.2.1",
     "uuidv4": "^6.1.1",
     "validator": "^13.1.1"
   },
   "devDependencies": {
-    "eslint": "^7.1.0",
-    "eslint-plugin-react": "^7.20.0"
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.21.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.22.0",
+    "eslint-plugin-react-hooks": "^4.2.0"
+  },
+  "parserOptions": {
+    "sourceType": "módulo"
   }
 }

@@ -23,7 +23,7 @@ export default function Fotter() {
             <a>Sobre nosotros</a>
           </Link>
           <Link href="/">
-            <a>Contacts</a>
+            <a>Contactos</a>
           </Link>
         </div>
 

@@ -21,10 +21,10 @@ export default function Login() {
   }
 
   return (
-    <PageContainer title="Quantum E-commerce - Reset Password">
+    <PageContainer title="ALIVIAA- Resetear contraseña">
       <FormContainer>
         <form onSubmit={handleSubmit}>
-          <h3 className="formTitle">Reset Password</h3>
+          <h3 className="formTitle">Resetear contraseña</h3>
 
           {msgError && <AlertError message={msgError} />}
 
@@ -37,7 +37,7 @@ export default function Login() {
               value={email}
             />
 
-            <Button type="submit" title="Send Email" />
+            <Button type="submit" title="Validar correo" />
           </InputContainer>
         </form>
 
