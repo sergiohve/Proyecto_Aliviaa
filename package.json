@@ -1,6 +1,6 @@
 {
-  "name": "next.js-ecommerce",
-  "version": "0.1.0",
+  "name": "next.js_aliviaa",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -45,5 +45,20 @@
   },
   "parserOptions": {
     "sourceType": "módulo"
-  }
+  },
+  "description": "Next, ecommerce",
+  "main": ".eslintrc.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sergiohve/Proyecto_Aliviaa.git"
+  },
+  "author": "Sergio Herrera",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sergiohve/Proyecto_Aliviaa/issues"
+  },
+  "homepage": "https://github.com/sergiohve/Proyecto_Aliviaa#readme"
 }
