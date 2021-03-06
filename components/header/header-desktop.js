@@ -27,51 +27,35 @@ export default function HeaderDesktop({ viewer }) {
           {!viewer && (
             <Link href="/user/login">
               <a className="nav-buttons-signin">
-                <FaUser color="#808080" />
-                <p>Ingresar</p>
+                <FaUser color="white" />
+                <p style={{color: "white"}}>Ingresar</p>
               </a>
             </Link>
           )}
           <Link href="/favoritos">
             <a className="nav-buttons-wishlist">
-              <FaRegHeart color="#808080" />
-              <p>Favoritos</p>
+              <FaRegHeart color="white" />
+              <p style={{color: "white"}}>Favoritos</p>
             </a>
           </Link>
           {viewer && (
             <>
               <Link href="/profile">
                 <a className="nav-buttons-profile">
-                  <FaUser color="#808080" />
+                  <FaUser color="white" />
                   <p>{viewer.name}</p>
                 </a>
               </Link>
               <Link href="/user/signout">
                 <a className="nav-buttons-signout">
-                  <FaSignOutAlt />
+                  <FaSignOutAlt  color="white"/>
                 </a>
               </Link>
             </>
           )}
         </div>
       </div>
-      <div className="header header-bottom">
-      <nav className="main-nav">
-          <Link href="#">
-            <a>Productos</a>
-          </Link>
-         
-        </nav>
-
-        <nav className="main-nav">
-          <Link href="#">
-            <a>Servicios</a>
-          </Link>
-         
-        </nav>
-
-       
-      </div>
+     
       <style jsx>{`
         /* Header Top */
         .header {
@@ -80,7 +64,8 @@ export default function HeaderDesktop({ viewer }) {
           justify-content: space-between;
           align-items: center;
           padding: 10px 10vw;
-         
+          background: #2aecec;
+          color: white;
          
         }
         a{
@@ -108,6 +93,7 @@ export default function HeaderDesktop({ viewer }) {
         }
         .nav-buttons .nav-buttons-signout {
           margin-left: 12px;
+          color: white;
         }
         .nav-buttons a:hover {
           text-decoration: underline;

@@ -14,17 +14,17 @@ const items = [
   {
     src: 'https://www.silviamores.com/wp-content/uploads/cabecera.jpg',
     altText: 'Imagen 1',
-    caption: 'Bienvenidos'
+    caption: ''
   },
   {
     src: 'https://www.silviamores.com/wp-content/uploads/cabecera.jpg',
     altText: 'Imagen 2',
-    caption: 'Beinvenidos'
+    caption: ''
   },
   {
     src: 'https://www.silviamores.com/wp-content/uploads/cabecera.jpg',
     altText: 'Imagen 3',
-    caption: 'Bienvenidos'
+    caption: ''
   }
 ];
 

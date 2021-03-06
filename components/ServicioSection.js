@@ -1,10 +1,10 @@
 
 import PromoCard from './promoCard';
 import HeaderBarProducts from './headerBarProducts';
-import Products from './products';
+import Servicios from './Servicios';
 import Carrusel from './Carrusel';
 
-export default function ProductSection({ category }) {
+export default function ServicioSection() {
   return (
     <section id="product">
      
@@ -13,7 +13,8 @@ export default function ProductSection({ category }) {
         <div className="ca">
         <Carrusel  />
         </div>
-        <Products category={category} />
+
+        <Servicios  />
       </div>
 
       <style jsx>{`

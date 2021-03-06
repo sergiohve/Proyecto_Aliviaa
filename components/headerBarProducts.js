@@ -1,7 +1,7 @@
 import { sortProductSectionVar } from '../apollo/client/cache';
 import { useQuery } from '@apollo/client';
 import { SORT_PRODUCT_SECTION } from '../apollo/client/queries';
-
+import Link from 'next/link';
 export default function HeaderBarProducts() {
   const { data } = useQuery(SORT_PRODUCT_SECTION);
 
@@ -18,42 +18,16 @@ export default function HeaderBarProducts() {
   return (
     <div className="header">
       <div className="sort-list">
-        <a
-          id="popular-products"
-          className={
-            data.sortProductSection[0] === 'rating' &&
-            data.sortProductSection[1] === 'DESC'
-              ? 'active'
-              : ''
-          }
-          onClick={handlePopularProductsClick}
-        >
-          Productos preferidos
+       
+        <Link href="/"> 
+        <a>
+          Productos 
         </a>
-        <a
-          id="low-price"
-          className={
-            data.sortProductSection[0] === 'price' &&
-            data.sortProductSection[1] === 'ASC'
-              ? 'active'
-              : ''
-          }
-          onClick={handleLowPriceProductsClick}
-        >
-          Precio bajo
+        </Link>
+         <Link href="/servicios">
+        <a>Servicios 
         </a>
-        <a
-          id="high-price"
-          className={
-            data.sortProductSection[0] === 'price' &&
-            data.sortProductSection[1] === 'DESC'
-              ? 'active'
-              : ''
-          }
-          onClick={handleHighPriceProductsClick}
-        >
-          Precio Alto
-        </a>
+         </Link>
       </div>
       <style jsx>{`
         .header {
