@@ -19,7 +19,7 @@ export default function Fotter() {
 
         <div className="footer-nav">
          
-          <Link href="/">
+          <Link href="/sobrenosotros">
             <a>Sobre nosotros</a>
           </Link>
           <Link href="/">
@@ -51,10 +51,7 @@ export default function Fotter() {
         </div>
       </div>
       <div className="footer footer-bottom">
-        <div className="texts">
-         
-        ><p>Realizado por Sergio Herrera</p>
-        </div>
+       
         
       </div>
 

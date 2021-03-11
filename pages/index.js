@@ -8,7 +8,9 @@ export default function Index() {
       {process.env.NODE_ENV === 'production' && (
         <Warning message="Si" />
       )}
+      
       <ProductSection />
+      
     </Page>
   );
 }

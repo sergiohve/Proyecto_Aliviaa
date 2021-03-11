@@ -19,9 +19,9 @@ exports.seed = function (knex) {
         },
         {
           id: 2,
-          name: 'Nintendo Switch ',
+          name: 'Ndo Switch ',
           description:
-            '3 Play Styles: TV Mode, Tabletop Mode, Handheld Mode ',
+            'd Mode ',
           img_url: '/products/61JnrafZ7zL._AC_SL1457_.jpg',
           price: 374.88,
           rating: 2,
@@ -31,7 +31,7 @@ exports.seed = function (knex) {
         },
         {
           id: 3,
-          name: ' Nintendo Switch',
+          name: ' Ninto Switch',
           description:
             'An adventure ',
           img_url: '/products/81V7L6auixL._SL1500_.jpg',

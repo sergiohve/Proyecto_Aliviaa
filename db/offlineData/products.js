@@ -13,7 +13,7 @@ const offlineProducts = [
   },
   {
     id: 2,
-    name: 'Nintendo Switch ',
+    name: 'Nint ',
     description:
       '3 Play Styles: TV Mode, Tabletop Mode',
     img_url: '/products/61JnrafZ7zL._AC_SL1457_.jpg',
@@ -25,7 +25,7 @@ const offlineProducts = [
   },
   {
     id: 3,
-    name: ' Nintendo Switch',
+    name: ' Ninten',
     description:
       'An adventure game that’s also a workout! ',
     img_url: '/products/81V7L6auixL._SL1500_.jpg',

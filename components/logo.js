@@ -14,7 +14,7 @@ export default function Logo() {
           line-height: 60px;
           letter-spacing: 1.65px;
           text-transform: uppercase;
-          color: #4d4d4d;
+          color: #002f34;
           text-decoration: none;
         }
       `}</style>

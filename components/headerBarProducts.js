@@ -17,9 +17,9 @@ export default function HeaderBarProducts() {
 
   return (
     <div className="header">
-      <div className="sort-list">
+      <div className="sort-list" style={{color: "#002f34"}}>
        
-        <Link href="/"> 
+        <Link href="/productos"> 
         <a>
           Productos 
         </a>
@@ -28,6 +28,7 @@ export default function HeaderBarProducts() {
         <a>Servicios 
         </a>
          </Link>
+        
       </div>
       <style jsx>{`
         .header {

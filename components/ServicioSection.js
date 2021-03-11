@@ -1,20 +1,22 @@
 
 import PromoCard from './promoCard';
 import HeaderBarProducts from './headerBarProducts';
-import Servicios from './Servicios';
+import Services from './services';
 import Carrusel from './Carrusel';
-
+import Carru_products from './Carru_products';
 export default function ServicioSection() {
   return (
     <section id="product">
      
       <div className="main">
-        <HeaderBarProducts />
+        
+       
+       
         <div className="ca">
         <Carrusel  />
         </div>
-
-        <Servicios  />
+        <h1 className="titulo">SERVICIOS</h1>
+        <Services  />
       </div>
 
       <style jsx>{`
@@ -22,15 +24,21 @@ export default function ServicioSection() {
           display: flex;
           flex-direction: row;
           justify-content: space-between;
-          width: 100%;
+          width: 90%;
         }
         #product .main {
           flex-grow: 1;
-          padding-left: 30px;
+          
+        }
+        .titulo{
+          text-align: center;
+          color: #002f34;
+          margin-top: "30px";
         }
         .ca{
-          margin-left: 100px;
-          paddingBottom: 100px
+          margin-left: 75px;
+          margin-bottom: 30px
+
         }
         @media (max-width: 900px) {
           #product .main {

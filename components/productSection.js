@@ -3,16 +3,21 @@ import PromoCard from './promoCard';
 import HeaderBarProducts from './headerBarProducts';
 import Products from './products';
 import Carrusel from './Carrusel';
+import Carru_products from './Carru_products';
 
 export default function ProductSection({ category }) {
   return (
     <section id="product">
      
       <div className="main">
-        <HeaderBarProducts />
+
+       
+       
         <div className="ca">
         <Carrusel  />
+
         </div>
+        <h1 className="titulo">PRODUCTOS</h1>
         <Products category={category} />
       </div>
 
@@ -20,16 +25,21 @@ export default function ProductSection({ category }) {
         #product {
           display: flex;
           flex-direction: row;
-          justify-content: space-between;
-          width: 100%;
+          
+          width: 90%;
         }
         #product .main {
           flex-grow: 1;
-          padding-left: 30px;
+          padding-left: 20px;
+        }
+        .titulo{
+          text-align: center;
+          color: #002f34;
         }
         .ca{
-          margin-left: 100px;
-          paddingBottom: 100px
+         padding-left: 50px;
+          padding-bottom: 50px;
+          
         }
         @media (max-width: 900px) {
           #product .main {

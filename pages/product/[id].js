@@ -12,6 +12,7 @@ import { PRODUCTS_BY_IDS, CART, WISHLIST } from '../../apollo/client/queries';
 import Page from '../../components/page';
 import ErrorAlert from '../../components/alerts/error';
 import { toggleCart, toggleWishlist } from '../../utils/toggleProductStates';
+import Carrusel from '../../components/Carrusel';
 
 export default function Home() {
   const router = useRouter();
@@ -27,20 +28,20 @@ export default function Home() {
 
   if ((error || !data?.productsById.length) && !loading) {
     return (
-      <Page title="ALIVIAA - ProductOs">
+      <Page title="ALIVIAA">
         <ErrorAlert message="ESTE PRODUCTO NO HA SIDO ENCONTRADO!"></ErrorAlert>
       </Page>
     );
   } else if (loading) {
     return (
-      <Page title="ALIVIAA - Productos">
+      <Page title="ALIVIAA">
         <p>Loading...</p>
       </Page>
     );
   }
 
   return (
-    <Page title="ALIVIAA- Productos">
+    <Page title="ALIVIAA">
       <article>
         <div className="top-buttons">
           <button
@@ -55,11 +56,11 @@ export default function Home() {
             ) && <FaRegHeart size={20} color="#D8D8D8" />}
           </button>
         </div>
-
+         
         <div className="product-img">
           <Image src={data.productsById[0].img_url} width="320" height="230" />
         </div>
-
+        <div className="descripcion">
         <h1 className="product-name">{data.productsById[0].name}</h1>
 
         <h3 className="product-description">
@@ -91,19 +92,28 @@ export default function Home() {
             )}
           </button>
         </div>
+        </div>
+        
 
         <style jsx>{`
           article {
             display: flex;
             align-items: center;
-            flex-direction: column;
+            flex-direction: row;
             box-sizing: border-box;
             height: 100%;
             width: 100%;
             padding: 24px;
-            background: white;
+            
             box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);
             border-radius: 6px;
+
+          }
+          .descripcion{
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+          
           }
           .top-buttons {
             margin-bottom: 24px;
@@ -128,19 +138,22 @@ export default function Home() {
             text-align: center;
             color: #666666;
             margin-bottom: 28px;
+            margin-left: 100px;
           }
           .product-description {
-            width: 40%;
+            width: 90%;
             line-height: 22px;
             text-decoration: none;
             font-weight: 400;
             font-size: 14px;
-            text-align: center;
+            text-align: justify;
             color: #666666;
             margin-bottom: 24px;
+            margin-left: 100px;
           }
           .rating {
             margin-bottom: 18px;
+            margin-left: 40px;
           }
           .price {
             display: flex;
@@ -149,11 +162,12 @@ export default function Home() {
             font-size: 20px;
             color: #666666;
             margin-bottom: 20px;
+            margin-left: 400px;
           }
           .price .add-cart {
             background: none;
             border: none;
-            margin-left: 5px;
+          
           }
           .price .add-cart:focus {
             outline: none;
@@ -187,6 +201,7 @@ export default function Home() {
           }
         `}</style>
       </article>
+     
     </Page>
   );
 }

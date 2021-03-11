@@ -4,10 +4,10 @@ export default function SearchBox() {
   return (
     <>
      
-      <div className="search-box">
+      <div className="search-box" >
        
         <button className="search-button">
-          <FaSearch color="#D8D8D8" size="15px" />
+          <FaSearch color="#002f34" background="#002f34" size="15px" />  
         </button>
         <input
           id="search"
@@ -27,19 +27,22 @@ export default function SearchBox() {
           padding-right: 12px;
           height: 42px;
           background: #ffffff;
-          border: 2px solid #f5f5f5;
+          border: 2px solid black;
           box-sizing: border-box;
-          border-radius: 4px;
+          border-radius: 5px;
+          color: "#002f34"
         }
         .search-box .search-button {
           display: flex;
           align-items: center;
           background: none;
           border: none;
+          color: #002f34;
           height: 100%;
         }
         .search-box .search-button:focus {
           outline: none;
+          color: #002f34;
         }
         .search-box .search-button:hover {
           opacity: 40%;
