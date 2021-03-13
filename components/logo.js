@@ -6,22 +6,23 @@ export default function Logo() {
      <img src="/products/log.png" className="logoo"/>
       <Link href="/">
        
-        <a className="logo">ALIVIAA.com</a>
+        <a className="logo">Aliviaa.com</a>
       </Link>
       <style jsx>{`
         .logo {
           font-style: normal;
           font-weight: 900;
-          font-size: 22px;
+          font-size: 18px;
           line-height: 60px;
           letter-spacing: 1.65px;
-          text-transform: uppercase;
+          margin-right: 16px;
           color: white;
           text-decoration: none;
         }
         .logoo{
-        
-          width: 60px;
+         margin-right: -10px;
+          width: 38px;
+          margin-top: -5px;
         }
       `}</style>
     </>
