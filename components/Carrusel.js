@@ -12,18 +12,23 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 const items = [
   {
-    src: 'https://www.silviamores.com/wp-content/uploads/cabecera.jpg',
+    src: "/products/car1.png",
     altText: 'Imagen 1',
     caption: ''
   },
   {
-    src: 'https://www.silviamores.com/wp-content/uploads/cabecera.jpg',
+    src:  "/products/car2.png",
     altText: 'Imagen 2',
     caption: ''
   },
   {
-    src: 'https://www.silviamores.com/wp-content/uploads/cabecera.jpg',
+    src:  "/products/car3.png",
     altText: 'Imagen 3',
+    caption: ''
+  },
+  {
+    src:  "/products/car4.png",
+    altText: 'Imagen 4',
     caption: ''
   }
 ];
@@ -56,7 +61,7 @@ const Carrusel = (props) => {
         onExited={() => setAnimating(false)}
         key={item.src}
       >
-        <img src={item.src} alt={item.altText} />
+        <img src={item.src} alt={item.altText} width="1250px"  height="600px"/>
         <CarouselCaption captionText={item.caption} captionHeader={item.caption} />
       </CarouselItem>
     );

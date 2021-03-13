@@ -1,17 +1,19 @@
 
-import PromoCard from './promoCard';
+
 import HeaderBarProducts from './headerBarProducts';
 import Services from './services';
 import Carrusel from './Carrusel';
-import Carru_products from './Carru_products';
+import Categorias from "./Categorias";
+
+
 export default function ServicioSection() {
   return (
     <section id="product">
      
       <div className="main">
         
-       
-       
+      <HeaderBarProducts/>
+      <Categorias/>
         <div className="ca">
         <Carrusel  />
         </div>
@@ -24,7 +26,7 @@ export default function ServicioSection() {
           display: flex;
           flex-direction: row;
           justify-content: space-between;
-          width: 90%;
+          width: 100%;
         }
         #product .main {
           flex-grow: 1;
@@ -36,8 +38,9 @@ export default function ServicioSection() {
           margin-top: "30px";
         }
         .ca{
-          margin-left: 75px;
-          margin-bottom: 30px
+          padding-left: 50px;
+          padding-bottom: 50px;
+          margin-left: -160px;
 
         }
         @media (max-width: 900px) {

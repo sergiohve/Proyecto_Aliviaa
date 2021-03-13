@@ -19,7 +19,7 @@ export default function HeaderBarProducts() {
     <div className="header">
       <div className="sort-list" style={{color: "#002f34"}}>
        
-        <Link href="/productos"> 
+        <Link href="/"> 
         <a>
           Productos 
         </a>

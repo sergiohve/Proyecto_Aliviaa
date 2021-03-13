@@ -1,9 +1,10 @@
 
-import PromoCard from './promoCard';
+
 import HeaderBarProducts from './headerBarProducts';
+import Categorias from "./Categorias";
 import Products from './products';
 import Carrusel from './Carrusel';
-import Carru_products from './Carru_products';
+
 
 export default function ProductSection({ category }) {
   return (
@@ -12,7 +13,9 @@ export default function ProductSection({ category }) {
       <div className="main">
 
        
-       
+       <HeaderBarProducts/>
+      <Categorias/>
+    
         <div className="ca">
         <Carrusel  />
 
@@ -26,11 +29,11 @@ export default function ProductSection({ category }) {
           display: flex;
           flex-direction: row;
           
-          width: 90%;
+          width: 100%;
         }
         #product .main {
           flex-grow: 1;
-          padding-left: 20px;
+          
         }
         .titulo{
           text-align: center;
@@ -39,6 +42,8 @@ export default function ProductSection({ category }) {
         .ca{
          padding-left: 50px;
           padding-bottom: 50px;
+          margin-left: -100px;
+          width: 1245px;
           
         }
         @media (max-width: 900px) {

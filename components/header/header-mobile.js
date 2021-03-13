@@ -23,8 +23,8 @@ export default function HeaderMobile({ viewer }) {
           display: flex;
           align-items: center;
           padding: 18px 48px;
-         color: #f47619;
-         background: #f47619;
+         color: white;
+         background: black;
         }
       `}</style>
     </div>

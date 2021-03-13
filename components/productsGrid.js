@@ -5,17 +5,24 @@ export default function ProductsGrid({ children }) {
       <style jsx>{`
         .products-grid {
           display: grid;
-          grid-gap: 28px;
-          grid: auto-flow / 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows:430px;
+  grid-gap: 20px;
         }
         @media (min-width: 1650px) {
           .products-grid {
-            grid: auto-flow / 1fr 1fr 1fr 1fr;
+           display: grid;
+         grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 430px;
+       grid-gap: 20px;
           }
         }
         @media (max-width: 1360px) {
           .products-grid {
-            grid: auto-flow / 1fr 1fr;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-auto-rows: 430px;
+            grid-gap: 20px;
           }
         }
         @media (max-width: 700px) {

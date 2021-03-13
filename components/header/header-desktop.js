@@ -22,20 +22,26 @@ export default function HeaderDesktop({ viewer }) {
 
         <SearchBox />
 
-        <div className="nav-buttons"  style={{color: "black"}}>
+        <div className="nav-buttons"  style={{color: "white"}}>
          
           {!viewer && (
             <Link href="/user/login"  >
               <a className="nav-buttons-signin">
-                <FaUser style={{color: "black"}} />
-                <p  style={{color: "black"}}>Ingresar</p>
+                <FaUser style={{color: "white"}} />
+                <p  style={{color: "white"}}>Ingresar</p>
               </a>
             </Link>
           )}
           <Link href="/favoritos">
             <a className="nav-buttons-wishlist">
-              <FaRegHeart style={{color: "black"}} />
-              <p style={{color: "black"}}>Favoritos</p>
+              <FaRegHeart style={{color: "white"}} />
+              <p style={{color: "white"}}>Favoritos</p>
+            </a>
+          </Link>
+          <Link href="/crearproducto">
+            <a className="nav-buttons-wishlist">
+             
+              <p style={{color: "white"}}>Vender</p>
             </a>
           </Link>
          
@@ -43,7 +49,7 @@ export default function HeaderDesktop({ viewer }) {
             <>
             <Link href="/profile">
                 <a className="nav-buttons-profile">
-                  <FaUser color="black" />
+                  <FaUser color="white" />
                   <p>{viewer.name}</p>
                 </a>
               </Link>
@@ -56,9 +62,9 @@ export default function HeaderDesktop({ viewer }) {
           )}
         </div>
       </div>
-      <div className="header header-bottom" style={{color: "#002f34"}}>
+      <div className="header header-bottom" style={{color: "white"}}>
         <div className="all-categories-box">
-          <FaBars color="black" />
+          <FaBars color="white" />
           <select name="categories" id="all-categories-box">
             <option value="Todas as categorias" selected>
              Todas las categorias
@@ -73,15 +79,7 @@ export default function HeaderDesktop({ viewer }) {
           </select>
         </div>
 
-        <nav className="main-nav" >
-          <Link href="/">
-            <a>Productos</a>
-          </Link>
-         
-          <Link href="/servicios">
-            <a>Servicios</a>
-          </Link>
-        </nav>
+       
 
        
       </div>
@@ -94,20 +92,21 @@ export default function HeaderDesktop({ viewer }) {
           justify-content: space-between;
           align-items: center;
           padding: 10px 10vw;
-          background: #3A84DC;
-          color: #f47619;
+          background: black;
+          color: white;
+
          
         }
         a{
           padding: 20px;
-          color: #f47619;
+          color: white;
           margin-left: -300px; 
         }
         .nav-buttons {
           display: flex;
           flex-direction: row;
           align-items: center;
-          color: #f47619;
+          color: white;
         }
         .nav-buttons a {
           display: flex;
@@ -119,7 +118,7 @@ export default function HeaderDesktop({ viewer }) {
           font-weight: 500;
           font-size: 14px;
           text-decoration: none;
-          color: #f47619;
+          color: white;
         }
         .nav-buttons .items-total {
           font-size: 12px;
@@ -162,49 +161,49 @@ export default function HeaderDesktop({ viewer }) {
           font-weight: 500;
           font-size: 14px;
           line-height: 60px;
-          color: black;
+          color: white;
           border: none;
           background: none;
         }
         .header-bottom .all-categories-box select:focus {
           outline: none;
-          color: black;
+          color: white;
         }
         .header-bottom .main-nav {
           display: flex;
           align-items: center;
-          color: black;
+          color: white;
         }
         .header-bottom .main-nav a {
           font-style: normal;
           font-weight: 500;
           font-size: 14px;
-          color: black;
+          color: white;
           text-decoration: none;
           margin-left: 16px;
           margin-right: 16px;
         }
         .header-bottom .main-nav a:hover {
           
-          color: black;
+          color: white;
         }
         .header-bottom .settings {
           display: flex;
           flex-direction: row;
           align-items: center;
-          color: black;
+          color: white;
         }
         .header-bottom .settings .menu-dropdown {
           /* Border */
           border-left: 2px solid #f5f5f5;
           padding: 20px 24px;
-          color: black;
+          color: white;
         }
         .header-bottom .settings .menu-dropdown p {
           font-style: normal;
           font-weight: 500;
           font-size: 14px;
-          color: black;
+          color: white;
         }
         
       `}</style>

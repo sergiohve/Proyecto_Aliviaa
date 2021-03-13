@@ -4,7 +4,7 @@ const offlineServices = [
       name: 'Curso Matematica',
       description:
         '4.7-inch Retina HD display ',
-      img_url: '/products/81hCytKTUTL.jpg',
+      img_url: '/products/matematica.jpg',
       price: 250.52,
       rating: 4.5,
       created_at: Date.now(),
@@ -16,7 +16,7 @@ const offlineServices = [
       name: 'Curso Ingles ',
       description:
         '3 Play Styles: TV Mode, Tabletop Mode',
-      img_url: '/products/61JnrafZ7zL._AC_SL1457_.jpg',
+      img_url: '/products/ingles.jpg',
       price: 374.88,
       rating: 2,
       created_at: Date.now(),
@@ -28,7 +28,7 @@ const offlineServices = [
       name: ' Curso Programacion',
       description:
         'An adventure game that’s also a workout! ',
-      img_url: '/products/81V7L6auixL._SL1500_.jpg',
+      img_url: '/products/programacion.jpg',
       price: 109.0,
       rating: 4.7,
       created_at: Date.now(),
@@ -40,7 +40,7 @@ const offlineServices = [
       name: 'Curso Desarrollo ',
       description:
         'Acer SB220Q bi 21.5 ',
-      img_url: '/products/81QpkIctqPL._AC_SL1500_.jpg',
+      img_url: '/products/desarrollo.png',
       price: 89.99,
       rating: 2.8,
       created_at: Date.now(),
@@ -52,7 +52,7 @@ const offlineServices = [
       name: 'Curso Quimica ',
       description:
         'ASUS VivoBook ',
-      img_url: '/products/81fstJkUlaL._AC_SL1500_.jpg',
+      img_url: '/products/quimica.jpg',
       price: 484.66,
       rating: 2,
       created_at: Date.now(),
@@ -64,7 +64,7 @@ const offlineServices = [
       name: 'Curso Odontologia ',
       description:
         'AmazonBasics Wireless ',
-      img_url: '/products/71nmrSRQ3cL._AC_SL1500_.jpg',
+      img_url: '/products/odonlogia.jpg',
       price: 39.49,
       rating: 3.5,
       created_at: Date.now(),
@@ -76,7 +76,7 @@ const offlineServices = [
       name: 'Curso Optimizacion ',
       description:
         'hecho en usa',
-      img_url: '/products/71xe2bDZ0nL._AC_UX679_.jpg',
+      img_url: '/products/optimizacion.png',
       price: 188.67,
       rating: 4,
       created_at: Date.now(),
@@ -88,7 +88,7 @@ const offlineServices = [
       name: 'Curso Desarrollo de software',
       description:
         'Acer Aspire 123456676655',
-      img_url: '/products/61UgXsi%2BmcL._AC_SL1500_.jpg',
+      img_url: '/products/software.jpg',
       price: 549.99,
       rating: 4,
       created_at: Date.now(),
@@ -100,7 +100,7 @@ const offlineServices = [
       name: 'Curso de Reparacion de PC',
       description:
         'Acer Aspire 123456676655',
-      img_url: '/products/71S-XwHaGzL._AC_SL1500_.jpg',
+      img_url: '/products/reparacion.jpg',
       price: 699.0,
       rating: 5,
       created_at: Date.now(),
@@ -112,7 +112,7 @@ const offlineServices = [
       name: 'Curso de extracademica ',
       description:
         'Moto G 121762373278372832',
-      img_url: '/products/61xQRmY%2BRRL._AC_SL1500_.jpg',
+      img_url: '/products/seguridad.jpg',
       price: 269.99,
       rating: 3.8,
       created_at: Date.now(),

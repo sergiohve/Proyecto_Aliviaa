@@ -40,10 +40,11 @@ export default function Products({ category }) {
       </>
     );
 
-  // Offline data
+  
   if (!data?.products || error)
     return (
       <ProductsGrid>
+        
         {offlineProducts.map((product) => (
           <ProductItem
             key={product.id}
@@ -57,9 +58,7 @@ export default function Products({ category }) {
       </ProductsGrid>
     );
 
-  // if (error) return <EmptySection />;
-
-  // if (!data.products) return <EmptySection />;
+  
 
   return (
     <ProductsGrid>
